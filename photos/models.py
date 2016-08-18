@@ -8,8 +8,8 @@ class Photo(models.Model):
 
     STYLES = (
         ('ML',  'Mona Lisa'),
-        ('TSN', 'The Starry Night'),
-        ('TS',  'The Scream'),
+        ('TSN', 'Starry Night'),
+        ('TS',  'Scream'),
         ('GPE', 'Girl with a Pearl Earring'),
     )
 

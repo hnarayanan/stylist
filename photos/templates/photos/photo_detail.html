@@ -5,5 +5,5 @@
 {% block content %}
 <h1><a href="{% url 'photo:list' %}">Stylist!</a></h1>
 <h2>{{ photo.title }} styled as the {{ photo.get_style_display }}</h2>
-<img src="{{ photo.image.url }}">
+<img class="pure-img" src="{{ photo.image.url }}" alt="{{ photo.title }}">
 {% endblock %}
