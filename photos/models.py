@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django.urls import reverse
 
 
 class Photo(models.Model):
@@ -18,8 +19,11 @@ class Photo(models.Model):
     title = models.CharField(max_length=100, blank=True)
     style = models.CharField(max_length=5, choices=STYLES)
 
+    class Meta:
+        ordering = ['-id']
+
     def __unicode__(self):
         return self.title
 
     def get_absolute_url(self):
-        return "/photos/%i/" % self.id
+        return reverse('photo:detail', kwargs={'pk': self.id})
