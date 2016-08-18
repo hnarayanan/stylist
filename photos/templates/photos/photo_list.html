@@ -3,7 +3,8 @@
 {% block title %}Recent photos on stylist!{% endblock %}
 
 {% block content %}
-<h1>Recent photos on stylist!</h1>
+<h1>Stylist!</h1>
+<p><a href="{% url 'photo:upload' %}">Upload and style a new photo</a></p>
 {% for photo in photos %}
 <h2>{{ photo.title }} styled as the {{ photo.get_style_display }}</h2>
 <a href="{{ photo.get_absolute_url }}"><img src="{{ photo.image.url }}"></a>
