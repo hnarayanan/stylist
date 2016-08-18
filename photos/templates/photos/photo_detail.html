@@ -1,0 +1,9 @@
+{% extends "photos/base.html" %}
+
+{% block title %}{{ photo.title }} on Stylist{% endblock %}
+
+{% block content %}
+<h1>Stylist!</h1>
+<h2>{{ photo.title }} styled as the {{ photo.get_style_display }}</h2>
+<img src="{{ photo.image.url }}">
+{% endblock %}
