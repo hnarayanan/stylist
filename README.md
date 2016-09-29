@@ -1,17 +1,27 @@
-# stylist
+# Stylist
 
-*stylist* is a webapp that uses convolutional neural networks for fast
-artistic style transfer.
+*Stylist* is a Django webapp that uses convolutional neural networks
+for fast artistic style transfer. It is inspired by
+[Prisma](http://prisma-ai.com).
+
+This project is a work in progress, but here is an example of the
+kinds of things it can do already:
 
 ![An example style transformation](core/images/example.gif)
 
-## Installation
+Stylist serves as a fun practical example for me to better understand
+how to train and serve neural networks at scale. If you'd like to
+learn more about the theory underlying this project, you will find the
+following interesting:
 
-TODO
+- [Convolutional neural networks for artistic style transfer](https://harishnarayanan.org/writing/artistic-style-transfer/)
+- [neural_style_transfer.ipynb](core/neural_style_transfer.ipynb)
+- Fast neural style transfer with Django and TensorFlow (Upcoming)
+- fast_neural_style_transfer.ipynb (Upcoming)
 
 ## Authors and contributing
 
-stylist is primarily written and maintained by [Harish
+Stylist is primarily written and maintained by [Harish
 Narayanan](https://harishnarayanan.org).
 
 If you're interested in contributing, please consider addressing some
