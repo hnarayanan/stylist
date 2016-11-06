@@ -3,7 +3,7 @@
 {% block title %}{{ photo.title }} on Stylist{% endblock %}
 
 {% block content %}
-<h1><a href="{% url 'photo:list' %}">Stylist!</a></h1>
+<h1><a href="{% url 'home' %}">Stylist!</a></h1>
 <p><a class="pure-button pure-button-primary" href="{% url 'photo:upload' %}">Upload and style a new photo</a></p>
 <h2>{{ photo.title }} styled as the {{ photo.get_style_display }}</h2>
 <img class="pure-img" src="{{ photo.image.url }}" alt="{{ photo.title }}">

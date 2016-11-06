@@ -3,7 +3,7 @@
 {% block title %}Style your photo!{% endblock %}
 
 {% block content %}
-<h1><a href="{% url 'photo:list' %}">Stylist!</a></h1>
+<h1><a href="{% url 'home' %}">Stylist!</a></h1>
 <h2>Upload your photo</h2>
 <form class="pure-form" action="" method="post" enctype="multipart/form-data">
   {% csrf_token %}
