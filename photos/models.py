@@ -3,21 +3,20 @@ from __future__ import unicode_literals
 from django.db import models
 from django.urls import reverse
 
+class Style(models.Model):
+
+    image = models.ImageField(upload_to='styles/%Y/%m/%d/')
+    title = models.CharField(max_length=100)
+
+    def __unicode__(self):
+        return self.title
+
 
 class Photo(models.Model):
 
-    STYLES = (
-        ('ML',  'Mona Lisa'),
-        ('TSN', 'Starry Night'),
-        ('TS',  'Scream'),
-        ('GPE', 'Girl with a Pearl Earring'),
-    )
-
     image = models.ImageField(upload_to='uploads/%Y/%m/%d/')
-    # TODO: Perhaps needs two fields, one for the original
-    # and one for the transformed image.
     title = models.CharField(max_length=100, null=True, blank=True)
-    style = models.CharField(max_length=5, choices=STYLES)
+    style = models.ForeignKey(Style, on_delete=models.PROTECT)
     is_highlighted = models.BooleanField(default=False)
 
     class Meta:

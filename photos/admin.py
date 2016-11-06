@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Photo
+from .models import Photo, Style
 
 
 def highlight(modeladmin, request, queryset):
@@ -16,4 +16,11 @@ class PhotoAdmin(admin.ModelAdmin):
     actions = [highlight]
 
 
+class StyleAdmin(admin.ModelAdmin):
+
+    list_display = ('title', 'image')
+    search_fields = ['title']
+
+
 admin.site.register(Photo, PhotoAdmin)
+admin.site.register(Style, StyleAdmin)
