@@ -16,8 +16,9 @@ class Photo(models.Model):
     image = models.ImageField(upload_to='uploads/%Y/%m/%d/')
     # TODO: Perhaps needs two fields, one for the original
     # and one for the transformed image.
-    title = models.CharField(max_length=100, blank=True)
+    title = models.CharField(max_length=100, null=True, blank=True)
     style = models.CharField(max_length=5, choices=STYLES)
+    is_highlighted = models.BooleanField(default=False)
 
     class Meta:
         ordering = ['-id']

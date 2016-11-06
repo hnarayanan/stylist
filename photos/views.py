@@ -19,3 +19,4 @@ class PhotoList(ListView):
 
     model = Photo
     context_object_name = 'photos'
+    queryset = Photo.objects.filter(is_highlighted=True)
