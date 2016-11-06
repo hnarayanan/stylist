@@ -3,22 +3,22 @@
 {% block title %}{{ photo.title }} on Stylist{% endblock %}
 
 {% block content %}
-<div style="text-align: center;">
-  <img class="pure-img" style="margin-left: auto; margin-right: auto;" src="{{ photo.image.url }}" alt="{{ photo.title }}">
-  <div class="pure-g">
-    <div class="pure-u-1-2">
-      <div class="l-box">
-	<a href="{{ photo.get_absolute_url }}">
-	  <img class="pure-img" src="{{ photo.image.url }}" alt="{{ photo.title }}">
-	</a>
-      </div>
+<img class="pure-img" style="margin-left: auto; margin-right: auto;" src="{{ photo.image.url }}" alt="{{ photo.title }}">
+<div class="pure-g">
+  <div class="pure-u-1-2">
+    <div class="l-box">
+      <h2>Uploaded Image</h2>
+      <a href="{{ photo.get_absolute_url }}">
+	<img class="pure-img" src="{{ photo.image.url }}" alt="{{ photo.title }}">
+      </a>
     </div>
-    <div class="pure-u-1-2">
-      <div class="l-box">
-	<a href="{{ photo.get_absolute_url }}">
-	  <img class="pure-img" src="{{ photo.style.image.url }}" alt="{{ photo.title }}">
-	</a>
-      </div>
+  </div>
+  <div class="pure-u-1-2">
+    <div class="l-box">
+      <h2>Chosen Style</h2>
+      <a href="{{ photo.get_absolute_url }}">
+	<img class="pure-img" src="{{ photo.style.image.url }}" alt="{{ photo.title }}">
+      </a>
     </div>
   </div>
 </div>
