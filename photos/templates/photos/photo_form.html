@@ -9,4 +9,13 @@
   {{ form.as_p }}
   <input class="pure-button pure-button-primary" type="submit" value="Style it!">
 </form>
+<div class="pure-g">
+  {% for style in styles %}
+  <div class="pure-u-1-4">
+    <div class="l-box">
+      <img class="pure-img" src="{{ style.image.url }}" alt="{{ style.title }}">
+    </div>
+  </div>
+  {% endfor %}
+</div>
 {% endblock %}

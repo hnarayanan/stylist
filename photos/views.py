@@ -1,12 +1,17 @@
 from django.views.generic import CreateView, DetailView, ListView
 
-from .models import Photo
+from .models import Photo, Style
 
 
 class PhotoCreate(CreateView):
 
     model = Photo
-    fields = ['image', 'title', 'style']
+    fields = ['image', 'style']
+
+    def get_context_data(self, **kwargs):
+        context = super(PhotoCreate, self).get_context_data(**kwargs)
+        context['styles'] = Style.objects.all()
+        return context
 
 
 class PhotoDetail(DetailView):
