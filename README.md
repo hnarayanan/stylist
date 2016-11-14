@@ -4,8 +4,11 @@
 for fast artistic style transfer. It is inspired by
 [Prisma](http://prisma-ai.com).
 
-This project is a work in progress, but here is an example of the
-kinds of things it can do already:
+This project is a work in progress, but here is how it looks so far,
+
+![A look at Stylist's UI](images/screenshot.png)
+
+and here is an example of what it can do already:
 
 ![An example style transformation](core/images/example.gif)
 
