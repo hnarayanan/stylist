@@ -1,4 +1,5 @@
 venv
-media
-db.sqlite3
 .ipynb_checkpoints
+
+webapp/media
+webapp/db.sqlite3
