@@ -10,7 +10,7 @@ This project is a work in progress, but here is how it looks so far,
 
 and here is an example of what it can do already:
 
-![An example style transformation](core/images/example.gif)
+![An example style transformation](algorithms/images/example.gif)
 
 Stylist serves as a fun practical example for me to better understand
 how to train and serve neural networks at scale. If you'd like to
@@ -18,7 +18,7 @@ learn more about the theory underlying this project, you will find the
 following interesting:
 
 - [Convolutional neural networks for artistic style transfer](https://harishnarayanan.org/writing/artistic-style-transfer/)
-- [neural_style_transfer.ipynb](core/neural_style_transfer.ipynb)
+- [neural_style_transfer.ipynb](algorithms/neural_style_transfer.ipynb)
 - Fast neural style transfer with Django and TensorFlow (Upcoming)
 - fast_neural_style_transfer.ipynb (Upcoming)
 
