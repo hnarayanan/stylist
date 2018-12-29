@@ -4,11 +4,12 @@
 for fast artistic style transfer. It is inspired by
 [Prisma](http://prisma-ai.com).
 
-This project is a work in progress, but here is how it looks so far,
+This project is a work in progress, but I hope that it will look like
+the following app when done:
 
-![A look at Stylist's UI](images/screenshot.png)
+![A look at Stylist's UI](designs/Photo Stream.png)
 
-and here is an example of what it can do already:
+with the following sort of image transformation.
 
 ![An example style transformation](algorithms/images/example.gif)
 
@@ -36,7 +37,7 @@ you!**
 
 ## Copyright and license
 
-Copyright (c) 2016 [Harish Narayanan](https://harishnarayanan.org).
+Copyright (c) 2016–2018 [Harish Narayanan](https://harishnarayanan.org).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
