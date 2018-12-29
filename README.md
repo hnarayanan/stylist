@@ -5,16 +5,13 @@ for fast artistic style transfer. It is inspired by
 [Prisma](http://prisma-ai.com).
 
 This project is a work in progress, but I hope that it will look like
-the following app when done:
-
-![A look at Stylist's UI](designs/Photo%20Stream.png)
-
-with the following sort of image transformation.
+[this prototype design](https://invis.io/9HPSC47GVB6). It will be
+capable of performing the following sorts of image transformation.
 
 ![An example style transformation](algorithms/images/example.gif)
 
 Stylist serves as a fun practical example for me to better understand
-how to train and serve neural networks at scale. If you'd like to
+how to train and serve neural networks at scale. If you’d like to
 learn more about the theory underlying this project, you will find the
 following interesting:
 
@@ -28,7 +25,7 @@ following interesting:
 Stylist is primarily written and maintained by [Harish
 Narayanan](https://harishnarayanan.org).
 
-If you're interested in contributing, please consider addressing some
+If you’re interested in contributing, please consider addressing some
 of the [issues people have previously
 reported](https://github.com/hnarayanan/stylist/issues) and
 [submitting a pull
