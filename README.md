@@ -7,7 +7,7 @@ for fast artistic style transfer. It is inspired by
 This project is a work in progress, but I hope that it will look like
 the following app when done:
 
-![A look at Stylist's UI](designs/Photo Stream.png)
+![A look at Stylist's UI](designs/Photo%20Stream.png)
 
 with the following sort of image transformation.
 
